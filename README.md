@@ -1,0 +1,1 @@
+# Rust_Training_Material_Inventyv
