@@ -1,0 +1,6 @@
+[package]
+name = "_8_3_8_relative_paths_with_super"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

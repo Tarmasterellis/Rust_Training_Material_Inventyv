@@ -1,0 +1,10 @@
+[package]
+name = "_13_4_property_based_testing"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+
+[dev-dependencies]
+proptest = "1"

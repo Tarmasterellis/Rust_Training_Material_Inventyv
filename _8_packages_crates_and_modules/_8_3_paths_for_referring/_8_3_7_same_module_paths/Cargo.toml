@@ -1,0 +1,6 @@
+[package]
+name = "_8_3_7_same_module_paths"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

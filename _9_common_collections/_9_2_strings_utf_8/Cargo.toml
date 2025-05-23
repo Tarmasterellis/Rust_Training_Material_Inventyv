@@ -1,0 +1,6 @@
+[package]
+name = "_9_2_strings_utf_8"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

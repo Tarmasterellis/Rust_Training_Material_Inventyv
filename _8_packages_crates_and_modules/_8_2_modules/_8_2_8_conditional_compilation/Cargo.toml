@@ -1,0 +1,6 @@
+[package]
+name = "_8_2_8_conditional_compilation"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

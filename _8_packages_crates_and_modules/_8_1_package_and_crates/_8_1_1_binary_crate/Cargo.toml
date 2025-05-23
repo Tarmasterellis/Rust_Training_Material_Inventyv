@@ -1,0 +1,9 @@
+[package]
+name = "_8_1_1_binary_crate"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.10.0", features = ["full"] }
+_8_1_2_library_crate = { path = "../_8_1_2_library_crate" }
+_8_1_3_packages = { path = "../_8_1_3_packages" }

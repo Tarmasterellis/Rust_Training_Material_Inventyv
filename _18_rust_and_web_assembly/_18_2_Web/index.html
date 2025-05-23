@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rust WASM Demo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="module">
+            import init, { greet } from './pkg/_18_1_wasm_package.js';
+            init().then(() => {
+                const output = document.getElementById('output');
+                let name = greet("World");
+                output.innerText = `${name} from Rust WASM Demo!`;
+            }).catch(console.error);
+        </script>
+        <script type="module" src="./index.js"></script>
+    </head>
+    <body>
+        <div>
+            <div id="output"></div>
+        </div>
+
+        <h1>Rust WebAssembly with Student Struct</h1>
+    </body>
+</html>

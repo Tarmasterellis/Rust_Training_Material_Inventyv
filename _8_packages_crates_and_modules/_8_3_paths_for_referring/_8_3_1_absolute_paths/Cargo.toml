@@ -1,0 +1,6 @@
+[package]
+name = "_8_3_1_absolute_paths"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

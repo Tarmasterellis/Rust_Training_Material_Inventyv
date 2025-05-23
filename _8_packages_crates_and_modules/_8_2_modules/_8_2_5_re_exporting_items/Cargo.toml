@@ -1,0 +1,6 @@
+[package]
+name = "_8_2_5_re_exporting_items"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
