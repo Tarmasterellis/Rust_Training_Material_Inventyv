@@ -37,14 +37,17 @@ fn main() {
 	let slice = &s[0..5]; // "Hola!"
 	println!("{}", slice);
 	
-	// This would cause a panic if you try to slice in the middle of a multi-byte character
-	let invalid_slice = &s[0..7]; // Panics at runtime
-    println!("{:?}", invalid_slice);
+	// // This would cause a panic if you try to slice in the middle of a multi-byte character
+	// let invalid_slice = &s[0..7]; // Panics at runtime
+    // println!("{:?}", invalid_slice);
 
 	// Converting Between Strings and Bytes
-	let s = String::from("Hello!");
+	let s = String::from("Hello! 😊");
 	let bytes = s.into_bytes(); // Converts into a Vec<u8>
 	println!("{:?}", bytes); // [72, 101, 108, 108, 111, 33]
+
+	let string = String::from_utf8(vec![72, 101, 108, 108, 111, 33, 32, 240, 159, 153, 139]).unwrap(); // Converts bytes to a String
+	println!("{}", string); // "Hello! 😊"
 
 	let bytes = vec![72, 101, 108, 108, 111, 33];
 	let s = String::from_utf8(bytes).unwrap(); // Converts bytes to a String

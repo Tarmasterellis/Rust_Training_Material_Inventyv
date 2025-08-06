@@ -45,6 +45,7 @@ fn main() {
     println!("Larger integer: {}", larger_int);
     println!("Larger float: {}", larger_float);
 
+
     // Generic types can be used in struct definitions to create structs that can work with different types and one Generic type.
     let int_point = Point { x: 3, y: 5 };
     let float_point = Point { x: 2.5, y: 7.5 };

@@ -90,7 +90,6 @@ fn hashmaps() {
 	}
 
 
-
 	// Default Types
 	let mut map: HashMap<&str, i32> = HashMap::new();
     map.insert("one", 1);

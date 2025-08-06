@@ -2,7 +2,7 @@
 
 fn main() {
     // Example of handling an error
-    let result: Result<i32, String> = divide(4, 2);
+    let result: Result<i32, String> = divide(4, 4);
     match result {
         Ok(result) => println!("Result: {:?}", result),
         Err(error) => println!("Error: {:?}", error),
@@ -35,7 +35,7 @@ fn divide(a: i32, b: i32) -> Result<i32, String> {
 
 
 fn calculate() -> Result<(), String> {
-    let result = divide(10, 2)?;  // Automatically returns error if it occurs
+    let result = divide(10, 0)?;  // Automatically returns error if it occurs
     println!("Result: {}", result);
     Ok(())
 }

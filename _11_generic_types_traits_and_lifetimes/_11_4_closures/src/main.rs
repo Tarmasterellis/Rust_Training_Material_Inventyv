@@ -42,9 +42,7 @@ fn main() {
 	consume_string();
 	
 	// 5. Returning a Closure (Requires 'impl Fn')
-	fn returns_closure() -> impl Fn(i32) -> i32 {
-		|x| x * 2
-	}
+	fn returns_closure() -> impl Fn(i32) -> i32 { |x| x * 2 }
 	
 	let double = returns_closure();
 	println!("Double using closure: {}", double(6)); // Output: 12

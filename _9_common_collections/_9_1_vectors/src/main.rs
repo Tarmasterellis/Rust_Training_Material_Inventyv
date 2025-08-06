@@ -64,7 +64,7 @@ fn main() {
 
 	let people: Vec<Person> = vec![
 		Person { name: String::from("Alice"), age: 30 },
-		Person { name: String::from("Bob"), age: 25 },
+		Person { age: 25, name: String::from("Bob") },
 	];
 	println!("{:?}", people);
 

@@ -56,17 +56,20 @@ fn main() {
 		println!("Counter: {}", *counter);
 	}
 
-	match _COUNTER.lock().unwrap() {
+	match _COUNTER.lock() {
 		Ok(counter) => println!("Counter: {}", *counter),
-		Err(_) => println!("Error: Mutex Lock Failed"),
-		panic!("Error: Mutex Lock Failed"),
+		Err(e) => println!("Error: Mutex Lock Failed {}", e),
+		_ => panic!("Error: Mutex Lock Failed")
 	}
+
+	println!("Counter: {}", COUNTER_.load(Ordering::SeqCst));
 
 	// Using Atomic Types for Concurrent Access
 	COUNTER_.fetch_add(1, Ordering::SeqCst);
 	println!("Counter: {}", COUNTER_.load(Ordering::SeqCst));
 
 	COUNTER_.fetch_add(1, Ordering::SeqCst);
+	println!("Counter: {}", COUNTER_.load(Ordering::SeqCst));
 	println!("Counter: {}", COUNTER_.load(Ordering::SeqCst));
 
 }
