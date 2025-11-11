@@ -42,6 +42,7 @@ pub async fn update_student(Path(id): Path<String>, State(state): State<SharedSt
     }
 }
 
+
 /// delete a student
 /// curl -X DELETE http://127.0.0.1:4500/students/{id}
 pub async fn delete_student(Path(id): Path<String>, State(state): State<SharedState>) -> StatusCode {

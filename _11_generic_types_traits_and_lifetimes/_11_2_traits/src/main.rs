@@ -157,6 +157,7 @@ struct Numbers {
     values: Vec<i32>,
 }
 
+
 impl Summable for Numbers {
     fn sum(&self) -> i32 {
         self.values.iter().sum()

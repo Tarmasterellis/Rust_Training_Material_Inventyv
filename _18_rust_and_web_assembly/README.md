@@ -44,6 +44,11 @@
                 wasm-pack build --target web
                 ```
 
+                -Build WebAssembly into target folder:
+                ```sh
+                wasm-pack build --release --target web --out-dir <folder/path/goes/here>
+                ```
+
                 - This generates the pkg/ directory with wasm_android_demo_bg.wasm and JavaScript bindings.
 
         - Step 2: Create an HTML + JS File
@@ -166,7 +171,7 @@
             ```
 
 3. Write Rust Code
-    - modify asrc/lib.rs:
+    - modify src/lib.rs:
         ```rust
         use jni::objects::{JClass, JString};
         use jni::sys::jstring;
